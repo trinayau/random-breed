@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random dog breed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hello!</h1>
+    <h1 id="randomBreed"></h1>
+    <h1 id ="randomAnimeMovie"></h1>
+    <button id="button">Click Me For New Recommendations!</button>
+
+    <script>
+        let arrayOfBreeds = ["Chihuahua", "German Shepherd", "Golden Retriever", "Husky", "Great Dane", "Pomsky", "Shih Tzu", "Shiba Inu", "Akita", "Greyhound", "Chow Chow"]
+
+        function randomiseBreed() {
+            //create random number between 0 to 10
+            return arrayOfBreeds[Math.floor(Math.random() * 11)];
+
+        }
+        document.getElementById("randomBreed").innerHTML = "Your dog personality is: " + randomiseBreed();
+
+        let arrayOfMovies = ["Colourful", "I Want To Eat Your Pancreas", "Silent Voice", "Kimi no Na Wa", "Summer Wars", "Grave of the Fireflies", "Spirited Away", "Ponyo", "Paprika", "Perfect Blue"];
+
+        function randomMovie() {
+            return arrayOfMovies[Math.floor(Math.random() * 11)]
+        }
+        document.getElementById("randomAnimeMovie").innerHTML = "You should watch this anime movie: " + randomMovie();
+
+        let button = document.getElementById("button");
+        button.addEventListener("click", refresh);
+        
+        function refresh(){
+        window.location.reload("Refresh")
+      }
+        </script>
+</body>
+</html>

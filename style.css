@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Lato&family=Montserrat:wght@600&family=Poppins:wght@400;700&family=Raleway:wght@400;700&family=Roboto:wght@400;700&family=Source+Sans+Pro:wght@400;700&family=Vollkorn&display=swap');
+
+body {
+    background-color: #E8DED3;
+}
+h1 {
+    font-family: "Poppins", sans-serif;
+    color: #394132;
+}
+
+button {
+    padding: 15px 20px;
+    border-radius: 5px;
+    background-color: #CEA09A;
+    color: #F7F7F7;
+    border: none;
+
+}
+
+button:hover {
+    background-color: #F7F7F7;
+    color:#CEA09A;
+}
+
