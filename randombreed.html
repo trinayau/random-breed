@@ -18,7 +18,7 @@
 
         function randomiseBreed() {
             //create random number between 0 to 10
-            return arrayOfBreeds[Math.floor(Math.random() * 11)];
+            return arrayOfBreeds[Math.floor(Math.random() * arrayOfBreeds.length)];
 
         }
         document.getElementById("randomBreed").innerHTML = "Your dog personality is: " + randomiseBreed();
@@ -26,7 +26,7 @@
         let arrayOfMovies = ["Colourful", "I Want To Eat Your Pancreas", "Silent Voice", "Kimi no Na Wa", "Summer Wars", "Grave of the Fireflies", "Spirited Away", "Ponyo", "Paprika", "Perfect Blue"];
 
         function randomMovie() {
-            return arrayOfMovies[Math.floor(Math.random() * 11)]
+            return arrayOfMovies[Math.floor(Math.random() * arrayOfMovies.length)]
         }
         document.getElementById("randomAnimeMovie").innerHTML = "You should watch this anime movie: " + randomMovie();
 
